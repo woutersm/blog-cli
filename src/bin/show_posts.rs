@@ -1,9 +1,9 @@
+extern crate blog_cli;
 extern crate diesel;
-extern crate diesel_demo_step_1_pg;
 
 use self::models::*;
+use blog_cli::*;
 use diesel::prelude::*;
-use diesel_demo_step_1_pg::*;
 
 fn main() {
     use self::schema::posts::dsl::*;
